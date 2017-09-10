@@ -1,0 +1,26 @@
+#!/usr/local/bin/python3    
+#MAC OS PATH only, for linux is shebang on /usr/bin/python3
+import glob,os
+
+#get number of title
+def getNumber():
+  try:
+    num = input('Write number of titles :')
+    complex( num )
+    return num
+  except ValueError:
+    print(' It not a number ')
+    print(' Cancle program ')
+    return False
+
+
+
+def copyTit():
+  from shutil import copy2 as copy
+  file = glob.glob( 'Downloads/StartUp*' )
+  target =  '/Volumes/Bez Názvu/Videos/StartUp.Season.1.Complete.720p.WEB-DL.x264-[MULVAcoded]' 
+  
+  copy( file[0], target )
+
+copyTit()
+
