@@ -17,7 +17,7 @@ def getNumber():
 
 def copyTit():
   from shutil import copy2 as copy
-  file = glob.glob( 'Downloads/StartUp*' )
+  file = glob.glob( '/Users/imac/Downloads/StartUp*' )
   target =  '/Volumes/Bez Názvu/Videos/StartUp.Season.1.Complete.720p.WEB-DL.x264-[MULVAcoded]' 
   
   copy( file[0], target )
